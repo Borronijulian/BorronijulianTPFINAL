@@ -1,0 +1,325 @@
+* {margin:0;padding:0;box-sizing: border-box;}
+@font-face {
+    font-family:Anton-regular ;
+    src: url(Anton-regular.ttf) format(truetype)
+}
+@font-face {
+    font-family: Antonio-light;
+    src: url(Antonio-light.ttf) format(truetype)
+}
+
+@font-face {
+    font-family:Antonio-Bold ;
+    src: url(Antonio-Bold.ttf) format(truetype)
+}
+
+@font-face {
+    font-family:Roboto ;
+    src: url(Roboto-regular.ttf) format(truetype)
+}
+
+
+
+
+
+body{ 
+    background-color: black;
+color: white;
+width: 100%;}
+
+
+header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1% 0 1%;
+
+       }
+
+    .baner img {width:100%;
+        
+
+    }
+
+   .banerdos{
+
+    animation-name: animaciondos;
+    animation-duration: 2s;
+   }
+
+nav{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:50%;
+ 
+   
+}
+
+
+a{color: black;}
+
+nav a {padding: 1% 2% 1% 2% ;
+    color: white; 
+    text-decoration: none;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    transition-duration: 0s;
+    transition-property: color, background-color, border-radius, transform, animation;
+    transition-delay: 0s;0s;0s;1s;1s;
+    
+ }
+
+
+
+nav a:hover {
+    color:rgb(120, 34, 219);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1% 2% 1% 2%;
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+
+
+}
+
+
+h1{
+
+    color: rgb(120, 34, 219);
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+h2{
+
+    color: grey;
+    font-size: 30px;
+
+}
+
+.amarillo{
+
+    animation-name: animaciontres;
+    animation: animaciontres 1s linear infinite;
+    -webkit-animation: animaciontres 1s ease-in-out infinite;
+
+}
+    
+
+H3{ color: white;
+    font-size: 20px;
+     font-family: 'Roboto', sans-serif
+}
+
+
+.disco{
+    transition-duration: 1s;
+    
+}
+
+.disco:hover {
+    border-radius: 50%;
+    
+    
+}
+
+
+
+
+  .logo{
+    width: 20vw;
+    display: flex;
+    justify-content: flex-start; 
+  }
+
+
+.espacio {height: 20px;}
+
+.botones{ 
+
+    background-color: white;
+    color: black;
+    padding: 1%;
+    border-radius: 7%;
+    border: 0;
+    transition-duration: 1s;
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.botones:hover{
+transform: translateY(0,7px);
+font-size: 17px;
+color: white;
+background-color:  rgb(120, 34, 219);
+
+}
+
+
+
+
+
+
+footer {display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1% 0 1%;
+
+}
+
+    .logodos{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;}
+
+.logodos img{ width:30%; margin: ;
+}
+
+    .cajaredes{ 
+         display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width:100%;
+        margin-right: 4%;
+       
+        }
+
+        .cajaredes p{ font-size: 35px;
+        color: white;
+    }
+
+
+  
+
+.iconos{ font-size:57px;
+color:rgb(120, 34, 219) ;
+margin-right: 50px;}
+
+.iconos:hover{
+
+    color: white;
+   
+}
+
+
+.respuesta{ margin-bottom: 500px;}
+
+
+.hamburguesa{
+    display: none;
+}
+
+
+@keyframes float {
+    0% {
+      transform: translatey(5px);
+    }
+    50% {
+      transform: translatey(0px);
+    }
+    100% {
+      transform: translatey(5px);
+    }
+  }
+
+
+@keyframes animaciondos {
+
+0%{opacity: 0;}
+
+100%{opacity: 100;}}
+
+@keyframes animaciontres{
+    0%{
+      color:grey;}
+    
+    100%{
+      color:rgb(226, 192, 41) ;
+    }
+  }
+
+
+  @media(max-width:768px){
+
+nav a{ font-size: 15px;}
+
+
+
+    }
+ 
+ 
+ 
+ 
+  @media(max-width:480px){
+
+.logo{ 
+    display:none
+
+}
+
+.hamburguesa{
+    display: block;
+
+
+flex-wrap: nowrap;
+width: 100%;
+animation: none;
+transition: none;
+
+}
+
+.navtitulos{
+text-align: right;
+
+}
+
+
+nav{ display: none;}
+
+ 
+
+  .navbar{display: block;
+transition: none;}
+
+  
+  .nav-link:active{
+
+    color:black;
+    background-color: black;
+
+   }
+
+
+   nav a:hover {
+    color:rgb(120, 34, 219);
+    background-color: black;
+    border-radius: 10px;
+    padding: 1% 2% 1% 2%;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;}
+
+
+
+.iconos{
+    margin-right: 0;
+}
+
+
+.fotoestadio{
+
+    justify-content: center;
+    text-align: center;
+  
+    margin-left: 20%;
+}
+
+.tiketek{ text-align: center;}
+
+
+}
